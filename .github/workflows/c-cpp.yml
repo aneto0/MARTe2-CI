@@ -16,5 +16,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: preparepip
       run: pip3 install -r Resources/QA/requirements.txt
+    - name: preparegit
+      run: git branch --set-upstream-to=origin/master master
     - name: qa
       run: ./QAHelper.sh -ex
