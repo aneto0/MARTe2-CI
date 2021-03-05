@@ -13,7 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make
-      run: make -f Makefile.linux
     - name: qa
       run: ./QAHelper.sh -ex
