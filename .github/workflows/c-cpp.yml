@@ -15,3 +15,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: make
       run: make -f Makefile.linux
+    - name: test
+      run: Build/x86-linux/GTest/MainGTest.ex 
